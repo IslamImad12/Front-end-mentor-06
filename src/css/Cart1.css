@@ -1,0 +1,63 @@
+body {
+    background-color: var(--Color6);
+}
+:root {
+    --Color1:hsl(25, 97%, 53%);
+    --Color2:hsl(0, 0%, 100%);
+    --Color3:hsl(217, 12%, 63%);
+    --Color4:hsl(216, 12%, 54%);
+    --Color5:hsl(213, 19%, 18%);
+    --Color6:hsl(216, 12%, 8%);
+}
+.rating {
+    background-color: var(--Color5);
+    position: relative;
+    top: 20vh;
+    width: 350px !important;
+    border-radius: 6%;
+}
+h1 {
+    color: var(--Color2);
+}
+.paragraph-1, 
+.paragraph-2 {
+    color: var(--Color3);
+}
+.num {
+    color: var(--Color4);
+}
+.btn-one {
+    background-color: var(--Color1) !important;
+    border: none;
+    width: 95%;
+}
+.number {
+    background-color: var(--Color4);
+    color: var(--Color2);
+    width: 40px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+}
+.star {
+    background-color: var(--Color4);
+    /* width: 60px; */
+    /* height: 30px; */
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    border-radius: 50%;
+}
+#par3 {
+    color: var(--Color3);
+    text-align: center;
+} 
+#par2 {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+.paragraph-1 {
+    text-align: center;
+}

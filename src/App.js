@@ -1,24 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import Cart1 from './Cart1';
+import { HashRouter, RouterProvider, createBrowserRouter, createHashRouter } from 'react-router-dom';
+import Cart2 from './Cart2';
+import React, { useState } from 'react'
 
 function App() {
+  let routers = createBrowserRouter([
+    {index:true, element:<Cart1></Cart1>},
+    {path:'cart2',element:<Cart2></Cart2>},
+  
+])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <div className="App">
+    //   <Cart1></Cart1>
+    // </div>
+    <>
+    <RouterProvider router={routers} ></RouterProvider>
+    <HashRouter router={routers} ></HashRouter>
+    </>
   );
 }
 
